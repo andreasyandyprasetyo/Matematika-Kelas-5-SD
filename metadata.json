@@ -1,0 +1,6 @@
+{
+  "name": "Matematika Juara Kelas 5 SD - Kurikulum Nasional",
+  "description": "Aplikasi pembelajaran matematika interaktif kelas 5 SD Kurikulum Nasional dengan materi lengkap semester 1 & 2, kuis berhadiah konfeti, latihan 10 soal per bab, dan grafik analisis perkembangan nilai serta rekomendasi belajar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

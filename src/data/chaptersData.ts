@@ -1,0 +1,1791 @@
+import { ChapterData } from '../types/math.ts';
+
+export const CHAPTERS_DATA: ChapterData[] = [
+  // ================= SEMESTER 1 =================
+  {
+    id: 'bab-1',
+    chapterNumber: 1,
+    semester: 1,
+    title: 'Bilangan Cacah Sampai 100.000',
+    tagline: 'Mengenal, Menulis, dan Menghitung Bilangan Puluhan Ribu',
+    iconName: 'Hash',
+    themeColor: 'blue',
+    themePastel: 'biru',
+    description: 'Pelajari cara membaca, menuliskan nilai tempat puluhan ribu, membandingkan, serta menyelesaikan soal hitung bilangan cacah sampai 100.000.',
+    subtopics: [
+      'Membaca dan menulis bilangan cacah sampai 100.000',
+      'Menentukan nilai tempat (satuan hingga puluhan ribu)',
+      'Membandingkan dan mengurutkan bilangan',
+      'Komposisi dan dekomposisi bilangan',
+      'Operasi hitung bilangan cacah dan pemecahan masalah',
+    ],
+    sections: [
+      {
+        title: '1. Membaca dan Menulis Bilangan Cacah Sampai 100.000',
+        content: [
+          'Bilangan cacah adalah bilangan yang dimulai dari 0, 1, 2, 3, dan seterusnya.',
+          'Dalam Kurikulum Nasional kelas 5 SD, kita mempelajari bilangan hingga 100.000 (lima sampai enam angka).',
+          'Contoh: Bilangan 64.725 dibaca "enam puluh empat ribu tujuh ratus dua puluh lima".',
+          'Tanda titik (.) digunakan sebagai pemisah ribuan untuk memudahkan membaca bilangan.',
+        ],
+        tips: 'Ingat! Tuliskan pemisah titik setiap 3 angka dari belakang, misalnya: 85.420.',
+        examples: [
+          {
+            question: 'Bagaimana cara membaca bilangan 73.085?',
+            steps: [
+              'Angka 73 menempati ribuan -> "Tujuh puluh tiga ribu"',
+              'Angka 0 pada ratusan tidak dibaca',
+              'Angka 85 menempati puluhan dan satuan -> "delapan puluh lima"',
+            ],
+            answer: 'Tujuh puluh tiga ribu delapan puluh lima.',
+          },
+        ],
+      },
+      {
+        title: '2. Nilai Tempat & Dekomposisi Bilangan',
+        content: [
+          'Setiap angka pada suatu bilangan memiliki nilai tempat tertentu tergantung letaknya:',
+          '• Puluhan Ribu: nilainya puluhan ribu (misal 5 = 50.000)',
+          '• Ribuan: nilainya ribuan (misal 4 = 4.000)',
+          '• Ratusan: nilainya ratusan (misal 3 = 300)',
+          '• Puluhan: nilainya puluhan (misal 2 = 20)',
+          '• Satuan: nilainya satuan (misal 7 = 7)',
+          'Dekomposisi adalah menguraikan bilangan berdasarkan nilai tempatnya: 54.327 = 50.000 + 4.000 + 300 + 20 + 7.',
+        ],
+        visualType: 'place_value',
+        examples: [
+          {
+            question: 'Tentukan nilai tempat angka 8 pada bilangan 48.615!',
+            steps: [
+              'Angka 5: satuan (5)',
+              'Angka 1: puluhan (10)',
+              'Angka 6: ratusan (600)',
+              'Angka 8: ribuan (8.000)',
+              'Angka 4: puluhan ribu (40.000)',
+            ],
+            answer: 'Nilai tempat angka 8 adalah Ribuan dengan nilai 8.000.',
+          },
+        ],
+      },
+      {
+        title: '3. Membandingkan dan Mengurutkan Bilangan',
+        content: [
+          'Gunakan simbol pembanding:',
+          '• > (lebih besar dari)',
+          '• < (lebih kecil dari)',
+          '• = (sama dengan)',
+          'Langkah membandingkan: Bandingkan angka dari nilai tempat tertinggi (kiri ke kanan). Jika sama, lanjutkan ke angka berikutnya.',
+        ],
+        examples: [
+          {
+            question: 'Bandingkan 62.450 dengan 62.710!',
+            steps: [
+              'Puluhan ribu sama (6 = 6)',
+              'Ribuan sama (2 = 2)',
+              'Ratusan: 4 lebih kecil daripada 7 (4 < 7)',
+            ],
+            answer: '62.450 < 62.710 (62.450 lebih kecil dari 62.710).',
+          },
+        ],
+      },
+      {
+        title: '4. Operasi Hitung dan Pemecahan Masalah',
+        content: [
+          'Operasi hitung meliputi penjumlahan, pengurangan, perkalian, dan pembagian bersusun.',
+          'Dalam soal cerita, pahami kata kunci:',
+          '• Penjumlahan: total, gabungan, membeli lagi, datang lagi.',
+          '• Pengurangan: sisa, selisih, rusak, diberikan ke orang lain.',
+          '• Perkalian: setiap kantong berisi sama banyak, beberapa kali lipat.',
+          '• Pembagian: dibagikan sama rata kepada sejumlah anak/wadah.',
+        ],
+        examples: [
+          {
+            question: 'Koperasi sekolah membeli 45 pak buku tulis. Setiap pak berisi 12 buku. Berapa total buku yang dibeli?',
+            steps: [
+              'Operasi perkalian bersusun: 45 × 12',
+              '45 × 10 = 450',
+              '45 × 2 = 90',
+              '450 + 90 = 540',
+            ],
+            answer: '540 buku tulis.',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-1-1',
+        question: 'Lambang bilangan dari "delapan puluh empat ribu sembilan ratus lima" adalah...',
+        options: ['84.950', '84.905', '84.095', '849.005'],
+        correctIndex: 1,
+        explanation: 'Perhatikan: "delapan puluh empat ribu" = 84.000, "sembilan ratus" = 900, "lima" = 5 (puluhan 0). Jadi 84.905.',
+      },
+      {
+        id: 'qq-1-2',
+        question: 'Pada bilangan 95.342, nilai tempat angka 9 adalah...',
+        options: ['Ratusan', 'Ribuan', 'Puluhan Ribu', 'Satuan'],
+        correctIndex: 2,
+        explanation: 'Angka 9 berada di posisi paling kiri pada bilangan lima angka, yaitu menempati nilai tempat Puluhan Ribu (90.000).',
+      },
+      {
+        id: 'qq-1-3',
+        question: 'Manakah pernyataan perbandingan yang BENAR?',
+        options: ['45.620 > 45.800', '67.125 < 67.099', '52.400 > 52.399', '89.000 < 88.999'],
+        correctIndex: 2,
+        explanation: 'Pada 52.400 dan 52.399, nilai ratusan 4 > 3, sehingga 52.400 lebih besar dari 52.399.',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-1-1',
+        question: 'Bentuk panjang (dekomposisi) dari bilangan 76.542 adalah...',
+        options: [
+          '7.000 + 600 + 50 + 40 + 2',
+          '70.000 + 6.000 + 500 + 40 + 2',
+          '70.000 + 60.000 + 500 + 42',
+          '76.000 + 540 + 2',
+        ],
+        correctIndex: 1,
+        explanation: 'Dekomposisi menguraikan berdasarkan nilai tempat: 70.000 (puluhan ribu) + 6.000 (ribuan) + 500 (ratusan) + 40 (puluhan) + 2 (satuan).',
+      },
+      {
+        id: 'mc-1-2',
+        question: 'Urutan bilangan 34.500, 32.900, 35.100, 33.700 dari yang TERKECIL ke terbesar adalah...',
+        options: [
+          '32.900, 33.700, 34.500, 35.100',
+          '35.100, 34.500, 33.700, 32.900',
+          '32.900, 34.500, 33.700, 35.100',
+          '33.700, 32.900, 34.500, 35.100',
+        ],
+        correctIndex: 0,
+        explanation: 'Bandingkan nilai ribuannya: 32.900 (terkecil), lalu 33.700, lalu 34.500, dan 35.100 (terbesar).',
+      },
+      {
+        id: 'mc-1-3',
+        question: 'Hasil dari 48.750 + 23.680 adalah...',
+        options: ['71.430', '72.330', '72.430', '73.430'],
+        correctIndex: 2,
+        explanation: '48.750 + 23.680 = 72.430. Penjumlahan bersusun dengan menyimpan pada ratusan dan ribuan.',
+      },
+      {
+        id: 'mc-1-4',
+        question: 'Sebuah pabrik roti memproduksi 32.500 roti pada hari Senin dan 28.750 roti pada hari Selasa. Selisih produksi roti kedua hari tersebut adalah...',
+        options: ['3.750 roti', '4.250 roti', '3.850 roti', '4.750 roti'],
+        correctIndex: 0,
+        explanation: 'Selisih dicari dengan pengurangan bilangan yang lebih besar dikurangi yang lebih kecil: 32.500 - 28.750 = 3.750 roti.',
+      },
+      {
+        id: 'mc-1-5',
+        question: 'Pak Rudi memiliki 15 kotak apel. Setiap kotak berisi 125 buah apel. Jumlah seluruh apel milik Pak Rudi adalah...',
+        options: ['1.775 buah', '1.875 buah', '1.925 buah', '2.075 buah'],
+        correctIndex: 1,
+        explanation: '15 × 125 = 1.875 buah apel. (15 × 100 = 1500; 15 × 25 = 375; 1500 + 375 = 1875).',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-1-1',
+        question: 'Tuliskan dalam bentuk angka bilangan "lima puluh tujuh ribu tiga ratus dua puluh"!',
+        acceptableAnswers: ['57320', '57.320'],
+        displayAnswer: '57.320',
+        hint: 'Ketik dalam bentuk angka menggunakan atau tanpa titik.',
+        explanation: 'Lima puluh tujuh ribu (57) dan tiga ratus dua puluh (320) ditulis 57.320.',
+      },
+      {
+        id: 'fill-1-2',
+        question: 'Berapakah nilai angka 7 pada bilangan 87.420?',
+        acceptableAnswers: ['7000', '7.000'],
+        displayAnswer: '7.000',
+        hint: 'Perhatikan bahwa angka 7 berada pada tempat ribuan.',
+        explanation: 'Angka 7 berada pada posisi ribuan, sehingga bernilai 7.000.',
+      },
+      {
+        id: 'fill-1-3',
+        question: 'Hasil pengurangan dari 65.000 - 38.500 adalah...',
+        acceptableAnswers: ['26500', '26.500'],
+        displayAnswer: '26.500',
+        hint: 'Lakukan pengurangan bersusun dengan teknik meminjam.',
+        explanation: '65.000 - 38.500 = 26.500.',
+      },
+      {
+        id: 'fill-1-4',
+        question: 'Sebuah toko memiliki 2.400 buku yang akan dimasukkan sama rata ke dalam 8 kardus. Berapa isi buku di setiap kardus?',
+        acceptableAnswers: ['300'],
+        displayAnswer: '300',
+        hint: 'Gunakan operasi pembagian 2.400 : 8.',
+        explanation: '2.400 ÷ 8 = 300 buku per kardus.',
+      },
+      {
+        id: 'fill-1-5',
+        question: 'Hitunglah nilai dari: 12.000 + (350 × 20) = ...',
+        acceptableAnswers: ['19000', '19.000'],
+        displayAnswer: '19.000',
+        hint: 'Dahulukan operasi perkalian dalam kurung, lalu jumlahkan.',
+        explanation: 'Kerjakan perkalian dahulu: 350 × 20 = 7.000. Lalu: 12.000 + 7.000 = 19.000.',
+      },
+    ],
+  },
+
+  // BAB 2
+  {
+    id: 'bab-2',
+    chapterNumber: 2,
+    semester: 1,
+    title: 'KPK dan FPB',
+    tagline: 'Kelipatan Persekutuan Terkecil & Faktor Persekutuan Terbesar',
+    iconName: 'Calculator',
+    themeColor: 'emerald',
+    themePastel: 'hijau',
+    description: 'Pahami bilangan prima, faktorisasi prima, cara menentukan KPK dan FPB, serta penerapannya dalam memecahkan soal cerita kehidupan sehari-hari.',
+    subtopics: [
+      'Mengenal bilangan prima',
+      'Kelipatan dan kelipatan persekutuan (KPK)',
+      'Faktor dan faktor persekutuan (FPB)',
+      'Faktorisasi prima (Pohon faktor & Tabel)',
+      'Penerapan KPK dan FPB dalam soal cerita',
+    ],
+    sections: [
+      {
+        title: '1. Mengenal Bilangan Prima',
+        content: [
+          'Bilangan prima adalah bilangan asli yang lebih besar dari 1 dan hanya memiliki 2 faktor, yaitu angka 1 dan bilangan itu sendiri.',
+          'Contoh bilangan prima di bawah 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29.',
+          'Catatan penting: Angka 2 adalah satu-satunya bilangan prima yang genap!',
+          'Angka 1 BUKAN bilangan prima karena hanya memiliki 1 faktor.',
+        ],
+        tips: 'Ingat bilangan prima awal: 2, 3, 5, 7, 11, 13, 17, 19.',
+        examples: [
+          {
+            question: 'Apakah 9 merupakan bilangan prima?',
+            steps: [
+              'Faktor dari 9 adalah 1, 3, dan 9 (karena 1×9=9 dan 3×3=9).',
+              'Karena memiliki lebih dari 2 faktor (memiliki faktor 3), maka 9 BUKAN bilangan prima.',
+            ],
+            answer: 'Bukan bilangan prima (9 adalah bilangan komposit).',
+          },
+        ],
+      },
+      {
+        title: '2. Faktorisasi Prima (Pohon Faktor)',
+        content: [
+          'Faktorisasi prima adalah menyatakan bilangan sebagai perkalian dari bilangan-bilangan prima.',
+          'Contoh faktorisasi prima dari 24:',
+          '24 ÷ 2 = 12',
+          '12 ÷ 2 = 6',
+          '6 ÷ 2 = 3',
+          'Jadi faktorisasi prima dari 24 = 2 × 2 × 2 × 3 = 2³ × 3.',
+        ],
+        visualType: 'factor_tree',
+        examples: [
+          {
+            question: 'Tuliskan faktorisasi prima dari 36 dalam bentuk pangkat!',
+            steps: [
+              '36 ÷ 2 = 18',
+              '18 ÷ 2 = 9',
+              '9 ÷ 3 = 3',
+              'Faktor-faktor primanya: 2, 2, 3, 3',
+            ],
+            answer: '2² × 3²',
+          },
+        ],
+      },
+      {
+        title: '3. Menentukan KPK dan FPB',
+        content: [
+          '• FPB (Faktor Persekutuan Terbesar): Ambil faktor prima yang SAMA dengan pangkat TERKECIL.',
+          '• KPK (Kelipatan Persekutuan Terkecil): Kalikan SEMUA faktor prima, dan jika ada faktor yang sama, ambil pangkat TERBESAR.',
+        ],
+        formula: 'FPB = Faktor sama pangkat terkecil | KPK = Semua faktor, yang sama ambil pangkat terbesar',
+        examples: [
+          {
+            question: 'Tentukan FPB dan KPK dari 12 dan 18!',
+            steps: [
+              'Faktorisasi 12 = 2² × 3',
+              'Faktorisasi 18 = 2 × 3²',
+              'FPB: Faktor sama pangkat terkecil -> 2¹ × 3¹ = 6',
+              'KPK: Semua faktor pangkat terbesar -> 2² × 3² = 4 × 9 = 36',
+            ],
+            answer: 'FPB = 6, KPK = 36.',
+          },
+        ],
+      },
+      {
+        title: '4. Penerapan dalam Soal Cerita',
+        content: [
+          'Cara mengenali tipe soal KPK vs FPB:',
+          '• Soal KPK: Berkaitan dengan "kapan mereka akan bersamaan lagi?", jadwal ronda, lonceng berbunyi bersama, lampu berkedip bersama.',
+          '• Soal FPB: Berkaitan dengan "membagikan ke sebanyak-banyaknya kantong/anak", jumlah bingkisan terbanyak dengan isi sama rata.',
+        ],
+        examples: [
+          {
+            question: 'Lampu merah menyala setiap 4 detik, lampu hijau setiap 6 detik. Kapan kedua lampu menyala bersamaan?',
+            steps: [
+              'Karena mencari waktu bersamaan, kita cari KPK dari 4 dan 6.',
+              'Kelipatan 4: 4, 8, 12, 16, 20...',
+              'Kelipatan 6: 6, 12, 18, 24...',
+              'Kelipatan terkecil yang sama adalah 12.',
+            ],
+            answer: 'Setiap 12 detik sekali.',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-2-1',
+        question: 'Di antara bilangan berikut, manakah yang merupakan bilangan prima?',
+        options: ['15', '21', '29', '33'],
+        correctIndex: 2,
+        explanation: '29 hanya bisa dibagi oleh 1 dan 29, sehingga merupakan bilangan prima. (15 bisa dibagi 3 & 5, 21 bisa dibagi 3 & 7, 33 bisa dibagi 3 & 11).',
+      },
+      {
+        id: 'qq-2-2',
+        question: 'Faktorisasi prima dari bilangan 20 adalah...',
+        options: ['2 × 10', '2² × 5', '4 × 5', '2 × 5²'],
+        correctIndex: 1,
+        explanation: 'Faktorisasi prima hanya boleh berisi bilangan prima: 20 = 2 × 2 × 5 = 2² × 5.',
+      },
+      {
+        id: 'qq-2-3',
+        question: 'KPK dari bilangan 6 dan 8 adalah...',
+        options: ['12', '16', '24', '48'],
+        correctIndex: 2,
+        explanation: 'Kelipatan 6: 6, 12, 18, 24, 30... Kelipatan 8: 8, 16, 24, 32... Kelipatan persekutuan terkecilnya adalah 24.',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-2-1',
+        question: 'Faktorisasi prima dari bilangan 40 adalah...',
+        options: ['2³ × 5', '2² × 10', '2 × 5²', '4 × 10'],
+        correctIndex: 0,
+        explanation: '40 = 2 × 20 = 2 × 2 × 10 = 2 × 2 × 2 × 5 = 2³ × 5.',
+      },
+      {
+        id: 'mc-2-2',
+        question: 'FPB dari bilangan 24 dan 32 adalah...',
+        options: ['4', '6', '8', '16'],
+        correctIndex: 2,
+        explanation: '24 = 2³ × 3. 32 = 2⁵. FPB mengambil faktor prima yang sama dengan pangkat terkecil: 2³ = 8.',
+      },
+      {
+        id: 'mc-2-3',
+        question: 'KPK dari bilangan 15 dan 20 adalah...',
+        options: ['30', '40', '60', '80'],
+        correctIndex: 2,
+        explanation: '15 = 3 × 5. 20 = 2² × 5. KPK = 2² × 3 × 5 = 4 × 3 × 5 = 60.',
+      },
+      {
+        id: 'mc-2-4',
+        question: 'Beni berlatih renang setiap 4 hari sekali dan Danu setiap 6 hari sekali. Jika mereka berlatih bersama hari Minggu, hari ke berapa setelah itu mereka akan berlatih bersama lagi?',
+        options: ['10 hari', '12 hari', '18 hari', '24 hari'],
+        correctIndex: 1,
+        explanation: 'Mencari waktu bersamaan menggunakan KPK dari 4 dan 6, yaitu 12 hari lagi.',
+      },
+      {
+        id: 'mc-2-5',
+        question: 'Ibu memiliki 30 buah apel dan 45 buah jeruk. Buah tersebut akan dimasukkan ke dalam beberapa kantong plastik dengan jumlah setiap jenis buah sama banyak. Berapa jumlah kantong plastik terbanyak yang diperlukan?',
+        options: ['5 kantong', '10 kantong', '15 kantong', '25 kantong'],
+        correctIndex: 2,
+        explanation: 'Mencari jumlah kantong terbanyak menggunakan FPB dari 30 dan 45. 30 = 2 × 3 × 5; 45 = 3² × 5. FPB = 3 × 5 = 15 kantong.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-2-1',
+        question: 'Berapakah bilangan prima terkecil yang lebih besar dari 10?',
+        acceptableAnswers: ['11'],
+        displayAnswer: '11',
+        hint: 'Periksa bilangan setelah 10: 11, 12, 13...',
+        explanation: '11 adalah bilangan prima karena hanya memiliki faktor 1 dan 11.',
+      },
+      {
+        id: 'fill-2-2',
+        question: 'Tentukan FPB dari bilangan 18 dan 24!',
+        acceptableAnswers: ['6'],
+        displayAnswer: '6',
+        hint: 'Faktor yang sama dari 18 dan 24 adalah 1, 2, 3, dan 6.',
+        explanation: 'Faktor terbesar yang sama (FPB) dari 18 dan 24 adalah 6.',
+      },
+      {
+        id: 'fill-2-3',
+        question: 'Tentukan KPK dari bilangan 8 dan 12!',
+        acceptableAnswers: ['24'],
+        displayAnswer: '24',
+        hint: 'Cari kelipatan dari 12 yang juga kelipatan 8: 12, 24...',
+        explanation: 'KPK dari 8 dan 12 adalah 24.',
+      },
+      {
+        id: 'fill-2-4',
+        question: 'Dua buah jam weker berdering masing-masing setiap 15 menit dan 20 menit. Tiap berapa menit kedua jam weker berdering bersama-sama?',
+        acceptableAnswers: ['60'],
+        displayAnswer: '60',
+        hint: 'Hitung KPK dari 15 dan 20.',
+        explanation: 'KPK(15, 20) = 60 menit.',
+      },
+      {
+        id: 'fill-2-5',
+        question: 'Guru mempunyai 24 buku tulis dan 36 pensil untuk dibagikan secara adil kepada muridnya. Berapa banyak murid terbanyak yang menerima alat tulis tersebut?',
+        acceptableAnswers: ['12'],
+        displayAnswer: '12',
+        hint: 'Hitung FPB dari 24 dan 36.',
+        explanation: 'FPB dari 24 dan 36 adalah 12 murid.',
+      },
+    ],
+  },
+
+  // BAB 3
+  {
+    id: 'bab-3',
+    chapterNumber: 3,
+    semester: 1,
+    title: 'Bilangan Pecahan',
+    tagline: 'Konsep Pecahan, Pecahan Senilai, dan Operasi Hitung Pecahan',
+    iconName: 'PieChart',
+    themeColor: 'amber',
+    themePastel: 'kuning',
+    description: 'Pelajari konsep pecahan biasa, campuran, desimal, persen, cara membandingkan pecahan, serta operasi penjumlahan, pengurangan, perkalian, dan pembagian pecahan.',
+    subtopics: [
+      'Konsep pecahan dan pecahan senilai',
+      'Membandingkan dan mengurutkan pecahan',
+      'Penjumlahan dan pengurangan pecahan (menyamakan penyebut)',
+      'Perkalian dan pembagian pecahan',
+      'Pecahan desimal dan persen',
+    ],
+    sections: [
+      {
+        title: '1. Konsep Pecahan & Pecahan Senilai',
+        content: [
+          'Pecahan dinyatakan dalam bentuk a/b, dengan "a" sebagai pembilang (bagian atas) dan "b" sebagai penyebut (bagian bawah, b ≠ 0).',
+          'Pecahan senilai diperoleh dengan mengalikan atau membagi pembilang dan penyebut dengan bilangan yang sama.',
+          'Contoh: 1/2 = 2/4 = 3/6 = 4/8 (semuanya mewakili nilai setengah).',
+        ],
+        visualType: 'fraction_bars',
+        examples: [
+          {
+            question: 'Sederhanakan pecahan 12/16 ke bentuk paling sederhana!',
+            steps: [
+              'Cari FPB dari 12 dan 16, yaitu 4.',
+              'Bagi pembilang dan penyebut dengan 4: (12 ÷ 4) / (16 ÷ 4) = 3/4',
+            ],
+            answer: '3/4',
+          },
+        ],
+      },
+      {
+        title: '2. Membandingkan dan Mengurutkan Pecahan',
+        content: [
+          '• Jika penyebutnya SAMA: Cukup bandingkan pembilangnya. Pecahan dengan pembilang lebih besar memiliki nilai lebih besar. (3/7 > 2/7)',
+          '• Jika penyebutnya BERBEDA: Samakan penyebutnya terlebih dahulu menggunakan KPK dari penyebut, atau gunakan perkalian silang.',
+        ],
+        examples: [
+          {
+            question: 'Bandingkan 2/3 dengan 3/5, mana yang lebih besar?',
+            steps: [
+              'KPK dari 3 dan 5 adalah 15.',
+              '2/3 = 10/15',
+              '3/5 = 9/15',
+              'Karena 10/15 > 9/15, maka 2/3 > 3/5.',
+            ],
+            answer: '2/3 lebih besar dari 3/5.',
+          },
+        ],
+      },
+      {
+        title: '3. Penjumlahan dan Pengurangan Pecahan',
+        content: [
+          'Syarat menjumlahkan atau mengurangkan pecahan: PENYEBUT HARUS SAMA.',
+          'Langkah-langkah:',
+          '1. Samakan penyebut dengan mencari KPK.',
+          '2. Sesuaikan pembilang masing-masing pecahan.',
+          '3. Jumlahkan atau kurangkan pembilang (penyebut tetap).',
+          '4. Sederhanakan hasil jika memungkinkan.',
+        ],
+        formula: 'a/c + b/c = (a + b)/c',
+        examples: [
+          {
+            question: 'Hitunglah: 1/2 + 1/3 = ...',
+            steps: [
+              'KPK dari 2 dan 3 adalah 6.',
+              '1/2 = 3/6',
+              '1/3 = 2/6',
+              '3/6 + 2/6 = 5/6',
+            ],
+            answer: '5/6',
+          },
+        ],
+      },
+      {
+        title: '4. Perkalian dan Pembagian Pecahan',
+        content: [
+          '• Perkalian: Kalikan pembilang dengan pembilang, dan penyebut dengan penyebut! (a/b × c/d = (a×c)/(b×d))',
+          '• Pembagian: Ubah menjadi perkalian dengan membalik pecahan kedua! (a/b ÷ c/d = a/b × d/c)',
+        ],
+        tips: 'Ingat rumus pembagian: "Bagi jadi Kali, Pecahan kedua Dibalik!"',
+        examples: [
+          {
+            question: 'Hitunglah 3/4 × 2/5 dan 2/3 ÷ 4/5!',
+            steps: [
+              'Perkalian: (3 × 2) / (4 × 5) = 6/20 = 3/10',
+              'Pembagian: 2/3 × 5/4 = 10/12 = 5/6',
+            ],
+            answer: 'Perkalian = 3/10, Pembagian = 5/6.',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-3-1',
+        question: 'Pecahan berikut yang SENILAI dengan 2/5 adalah...',
+        options: ['4/10', '4/15', '5/10', '2/10'],
+        correctIndex: 0,
+        explanation: 'Kalikan pembilang dan penyebut dengan 2: (2×2)/(5×2) = 4/10.',
+      },
+      {
+        id: 'qq-3-2',
+        question: 'Hasil dari 1/4 + 2/4 adalah...',
+        options: ['3/8', '3/4', '2/4', '1/8'],
+        correctIndex: 1,
+        explanation: 'Karena penyebut sudah sama (4), jumlahkan pembilangnya: (1 + 2) / 4 = 3/4.',
+      },
+      {
+        id: 'qq-3-3',
+        question: 'Hasil dari 2/3 × 3/5 adalah...',
+        options: ['5/8', '6/15 atau 2/5', '5/15', '6/8'],
+        correctIndex: 1,
+        explanation: 'Perkalian pecahan: (2 × 3) / (3 × 5) = 6/15. Disederhanakan dengan membagi 3 menjadi 2/5.',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-3-1',
+        question: 'Bentuk paling sederhana dari pecahan 18/24 adalah...',
+        options: ['9/12', '6/8', '3/4', '2/3'],
+        correctIndex: 2,
+        explanation: 'FPB dari 18 dan 24 adalah 6. (18 ÷ 6) / (24 ÷ 6) = 3/4.',
+      },
+      {
+        id: 'mc-3-2',
+        question: 'Hasil dari 2/3 + 1/4 adalah...',
+        options: ['3/7', '11/12', '8/12', '5/12'],
+        correctIndex: 1,
+        explanation: 'KPK dari 3 dan 4 adalah 12. 2/3 = 8/12 dan 1/4 = 3/12. Maka 8/12 + 3/12 = 11/12.',
+      },
+      {
+        id: 'mc-3-3',
+        question: 'Hasil dari 5/6 - 1/3 adalah...',
+        options: ['4/3', '4/6 atau 1/2', '3/6 atau 1/2', '2/6 atau 1/3'],
+        correctIndex: 2,
+        explanation: 'Samakan penyebut ke 6: 1/3 = 2/6. Maka 5/6 - 2/6 = 3/6 = 1/2.',
+      },
+      {
+        id: 'mc-3-4',
+        question: 'Ibu memiliki gula pasir sebanyak 3/4 kg. Kemudian ibu menggunakan 1/2 kg untuk membuat teh manis. Sisa gula pasir ibu sekarang adalah...',
+        options: ['1/4 kg', '2/4 kg', '1/2 kg', '1/8 kg'],
+        correctIndex: 0,
+        explanation: '3/4 - 1/2 = 3/4 - 2/4 = 1/4 kg.',
+      },
+      {
+        id: 'mc-3-5',
+        question: 'Hasil dari 3/5 ÷ 2/3 adalah...',
+        options: ['6/15', '9/10', '5/8', '10/9'],
+        correctIndex: 1,
+        explanation: '3/5 ÷ 2/3 = 3/5 × 3/2 = (3 × 3) / (5 × 2) = 9/10.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-3-1',
+        question: 'Jika 3/4 diubah menjadi bentuk desimal, maka nilainya adalah...',
+        acceptableAnswers: ['0.75', '0,75'],
+        displayAnswer: '0,75',
+        hint: 'Bagi 3 dengan 4, atau ubah penyebut menjadi 100.',
+        explanation: '3/4 = (3 × 25) / (4 × 25) = 75/100 = 0,75.',
+      },
+      {
+        id: 'fill-3-2',
+        question: 'Berapakah pembilang dari pecahan senilai: 2/5 = ... / 20?',
+        acceptableAnswers: ['8'],
+        displayAnswer: '8',
+        hint: 'Penyebut 5 dikali 4 menjadi 20, maka pembilang 2 juga dikalikan 4.',
+        explanation: '2/5 = (2 × 4) / (5 × 4) = 8/20. Jadi pembilangnya adalah 8.',
+      },
+      {
+        id: 'fill-3-3',
+        question: 'Hasil dari 1/5 + 3/5 dalam bentuk pecahan paling sederhana adalah (tulis format a/b):',
+        acceptableAnswers: ['4/5'],
+        displayAnswer: '4/5',
+        hint: 'Penyebut sudah sama, jumlahkan pembilangnya: 1 + 3.',
+        explanation: '1/5 + 3/5 = 4/5.',
+      },
+      {
+        id: 'fill-3-4',
+        question: 'Hitunglah hasil dari: 4 × 1/2 = ...',
+        acceptableAnswers: ['2'],
+        displayAnswer: '2',
+        hint: '4 dikali 1/2 sama dengan setengah dari 4.',
+        explanation: '4 × 1/2 = 4/2 = 2.',
+      },
+      {
+        id: 'fill-3-5',
+        question: 'Berapakah persen (%) dari pecahan 1/4?',
+        acceptableAnswers: ['25', '25%'],
+        displayAnswer: '25%',
+        hint: 'Persen artinya per seratus: 1/4 × 100%.',
+        explanation: '1/4 × 100% = 25%.',
+      },
+    ],
+  },
+
+  // BAB 4
+  {
+    id: 'bab-4',
+    chapterNumber: 4,
+    semester: 1,
+    title: 'Keliling Bangun Datar',
+    tagline: 'Memahami Konsep Keliling dan Menghitung Sisi Luar Bangun Datar',
+    iconName: 'Square',
+    themeColor: 'teal',
+    themePastel: 'hijau',
+    description: 'Pahami konsep keliling sebagai total panjang garis yang membatasi bangun datar: persegi, persegi panjang, segitiga, jajar genjang, trapesium, dan lingkaran.',
+    subtopics: [
+      'Konsep dasar keliling',
+      'Keliling persegi dan persegi panjang',
+      'Keliling segitiga dan jajar genjang',
+      'Keliling trapesium',
+      'Keliling lingkaran (menggunakan π = 22/7 atau 3,14)',
+    ],
+    sections: [
+      {
+        title: '1. Konsep Dasar Keliling',
+        content: [
+          'Keliling adalah jumlah panjang seluruh sisi luar yang membatasi suatu bangun datar.',
+          'Bayangkan kamu berjalan mengelilingi tepi sebuah lapangan dari satu titik sudut hingga kembali ke titik semula.',
+          'Rumus umum: Keliling = Sisi 1 + Sisi 2 + Sisi 3 + ... (jumlah seluruh sisi luar).',
+        ],
+        visualType: 'perimeter_concept',
+        tips: 'Ingat! Keliling hanya menjumlahkan tepi/batas luar, bukan bagian dalam bangun.',
+        examples: [
+          {
+            question: 'Sebuah segitiga memiliki sisi 6 cm, 8 cm, dan 10 cm. Berapa kelilingnya?',
+            steps: [
+              'Keliling segitiga = a + b + c',
+              'K = 6 + 8 + 10 = 24 cm',
+            ],
+            answer: '24 cm',
+          },
+        ],
+      },
+      {
+        title: '2. Keliling Persegi dan Persegi Panjang',
+        content: [
+          '• Persegi: Memiliki 4 sisi yang sama panjang (s). Rumus: K = 4 × s',
+          '• Persegi Panjang: Memiliki 2 panjang (p) dan 2 lebar (l). Rumus: K = 2 × (p + l)',
+        ],
+        visualType: 'perimeter_square_rect',
+        formula: 'K_persegi = 4 × s | K_persegipanjang = 2 × (p + l)',
+        examples: [
+          {
+            question: 'Sebuah persegi panjang memiliki panjang 12 cm dan lebar 5 cm. Hitung kelilingnya!',
+            steps: [
+              'K = 2 × (p + l)',
+              'K = 2 × (12 + 5) = 2 × 17 = 34 cm',
+            ],
+            answer: '34 cm',
+          },
+        ],
+      },
+      {
+        title: '3. Keliling Jajar Genjang dan Trapesium',
+        content: [
+          '• Jajar Genjang: Sisi yang berhadapan sama panjang (alas a dan sisi miring b). Rumus: K = 2 × (a + b)',
+          '• Trapesium: Jumlahkan keempat sisi luarnya: K = a + b + c + d',
+        ],
+        visualType: 'perimeter_other_shapes',
+        examples: [
+          {
+            question: 'Sebuah jajar genjang memiliki sisi alas 10 cm dan sisi miring 7 cm. Berapa kelilingnya?',
+            steps: [
+              'K = 2 × (10 + 7) = 2 × 17 = 34 cm',
+            ],
+            answer: '34 cm',
+          },
+        ],
+      },
+      {
+        title: '4. Keliling Lingkaran',
+        content: [
+          'Lingkaran dibatasi oleh satu garis lengkung dengan jari-jari (r) atau diameter (d = 2r).',
+          'Nilai konstanta π (pi) adalah 22/7 (jika r atau d kelipatan 7) atau 3,14.',
+          'Rumus: K = 2 × π × r atau K = π × d',
+        ],
+        visualType: 'perimeter_circle',
+        formula: 'K_lingkaran = 2 × π × r = π × d',
+        examples: [
+          {
+            question: 'Sebuah roda memiliki jari-jari 7 cm. Hitung keliling roda tersebut! (π = 22/7)',
+            steps: [
+              'K = 2 × π × r',
+              'K = 2 × (22/7) × 7',
+              'K = 2 × 22 = 44 cm',
+            ],
+            answer: '44 cm',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-4-1',
+        question: 'Sebuah persegi memiliki panjang sisi 9 cm. Keliling persegi tersebut adalah...',
+        options: ['18 cm', '27 cm', '36 cm', '81 cm'],
+        correctIndex: 2,
+        explanation: 'Keliling persegi = 4 × sisi = 4 × 9 = 36 cm.',
+      },
+      {
+        id: 'qq-4-2',
+        question: 'Rumus untuk mencari keliling persegi panjang dengan panjang p dan lebar l adalah...',
+        options: ['p × l', '2 × p + l', '2 × (p + l)', '4 × (p + l)'],
+        correctIndex: 2,
+        explanation: 'Keliling persegi panjang adalah 2 × (p + l) atau 2p + 2l.',
+      },
+      {
+        id: 'qq-4-3',
+        question: 'Sebuah lingkaran memiliki diameter 14 cm. Keliling lingkaran tersebut adalah... (gunakan π = 22/7)',
+        options: ['22 cm', '44 cm', '88 cm', '154 cm'],
+        correctIndex: 1,
+        explanation: 'Keliling lingkaran = π × d = 22/7 × 14 = 22 × 2 = 44 cm.',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-4-1',
+        question: 'Taman berbentuk persegi panjang berukuran panjang 15 m dan lebar 10 m. Jika Edo berlari mengelilingi taman tersebut sebanyak 1 putaran penuh, jarak yang ditempuh Edo adalah...',
+        options: ['25 m', '50 m', '75 m', '150 m'],
+        correctIndex: 1,
+        explanation: 'Keliling = 2 × (p + l) = 2 × (15 + 10) = 2 × 25 = 50 meter.',
+      },
+      {
+        id: 'mc-4-2',
+        question: 'Sebuah segitiga sama sisi memiliki keliling 48 cm. Panjang masing-masing sisinya adalah...',
+        options: ['12 cm', '16 cm', '24 cm', '144 cm'],
+        correctIndex: 1,
+        explanation: 'Segitiga sama sisi memiliki 3 sisi sama panjang. Panjang sisi = Keliling ÷ 3 = 48 ÷ 3 = 16 cm.',
+      },
+      {
+        id: 'mc-4-3',
+        question: 'Jajar genjang memiliki panjang sisi alas 14 cm dan sisi samping 8 cm. Keliling jajar genjang tersebut adalah...',
+        options: ['22 cm', '44 cm', '56 cm', '112 cm'],
+        correctIndex: 1,
+        explanation: 'Keliling jajar genjang = 2 × (14 + 8) = 2 × 22 = 44 cm.',
+      },
+      {
+        id: 'mc-4-4',
+        question: 'Sebuah trapesium sama kaki memiliki panjang sisi sejajar 10 cm dan 18 cm, serta sisi miring masing-masing 6 cm. Keliling trapesium tersebut adalah...',
+        options: ['34 cm', '40 cm', '46 cm', '52 cm'],
+        correctIndex: 1,
+        explanation: 'Keliling trapesium = jumlah seluruh sisi = 10 + 18 + 6 + 6 = 40 cm.',
+      },
+      {
+        id: 'mc-4-5',
+        question: 'Sebuah piring bundar memiliki jari-jari 10 cm. Keliling piring tersebut adalah... (π = 3,14)',
+        options: ['31,4 cm', '62,8 cm', '125,6 cm', '314 cm'],
+        correctIndex: 1,
+        explanation: 'Keliling lingkaran = 2 × π × r = 2 × 3,14 × 10 = 62,8 cm.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-4-1',
+        question: 'Berapakah keliling persegi yang memiliki panjang sisi 15 cm? (tulis angka saja)',
+        acceptableAnswers: ['60'],
+        displayAnswer: '60',
+        hint: 'Gunakan rumus K = 4 × sisi.',
+        explanation: 'Keliling = 4 × 15 = 60 cm.',
+      },
+      {
+        id: 'fill-4-2',
+        question: 'Sebuah persegi panjang memiliki keliling 40 cm dan panjang 12 cm. Berapakah lebarnya?',
+        acceptableAnswers: ['8'],
+        displayAnswer: '8',
+        hint: 'Keliling : 2 = p + l -> 20 = 12 + lebar.',
+        explanation: 'p + l = 40 ÷ 2 = 20 cm. Lebar = 20 - 12 = 8 cm.',
+      },
+      {
+        id: 'fill-4-3',
+        question: 'Segitiga siku-siku memiliki panjang sisi 5 cm, 12 cm, dan 13 cm. Berapakah kelilingnya?',
+        acceptableAnswers: ['30'],
+        displayAnswer: '30',
+        hint: 'Jumlahkan ketiga sisinya: 5 + 12 + 13.',
+        explanation: 'Keliling = 5 + 12 + 13 = 30 cm.',
+      },
+      {
+        id: 'fill-4-4',
+        question: 'Hitung keliling lingkaran dengan diameter 28 cm! (gunakan π = 22/7)',
+        acceptableAnswers: ['88'],
+        displayAnswer: '88',
+        hint: 'K = π × d = 22/7 × 28.',
+        explanation: 'K = 22/7 × 28 = 22 × 4 = 88 cm.',
+      },
+      {
+        id: 'fill-4-5',
+        question: 'Sebuah lapangan berbentuk persegi memiliki keliling 100 meter. Berapa panjang sisi lapangan tersebut?',
+        acceptableAnswers: ['25'],
+        displayAnswer: '25',
+        hint: 'Sisi = Keliling dibagi 4.',
+        explanation: 'Sisi = 100 ÷ 4 = 25 meter.',
+      },
+    ],
+  },
+
+  // BAB 5
+  {
+    id: 'bab-5',
+    chapterNumber: 5,
+    semester: 1,
+    title: 'Luas Daerah Bangun Datar',
+    tagline: 'Menghitung Luas Segitiga, Jajar Genjang, Trapesium, dan Layang-Layang',
+    iconName: 'LayoutGrid',
+    themeColor: 'purple',
+    themePastel: 'merah',
+    description: 'Pahami konsep luas sebagai besaran daerah yang tertutup oleh bangun datar, serta rumus luas segitiga, jajar genjang, trapesium, dan layang-layang.',
+    subtopics: [
+      'Konsep luas daerah bangun datar',
+      'Menghitung luas segitiga (L = 1/2 × a × t)',
+      'Menghitung luas jajar genjang (L = a × t)',
+      'Menghitung luas trapesium (L = 1/2 × (a + b) × t)',
+      'Menghitung luas layang-layang dan belah ketupat (L = 1/2 × d1 × d2)',
+    ],
+    sections: [
+      {
+        title: '1. Konsep Luas Daerah & Luas Segitiga',
+        content: [
+          'Luas daerah adalah besarnya permukaan yang dibatasi oleh garis batas bangun datar.',
+          'Satuan luas dinyatakan dalam satuan kuadrat (persegi), seperti cm² (centimeter persegi) atau m² (meter persegi).',
+          'Tinggi (t) pada segitiga dan jajar genjang harus selalu tegak lurus (membentuk sudut 90°) terhadap garis alas (a).',
+        ],
+        visualType: 'area_triangle',
+        tips: 'Jangan tertukar! Tinggi adalah garis tegak lurus, bukan sisi miring.',
+        examples: [
+          {
+            question: 'Sebuah segitiga memiliki alas 10 cm dan tinggi 8 cm. Berapa luasnya?',
+            steps: [
+              'Rumus: L = 1/2 × a × t',
+              'L = 1/2 × 10 × 8 = 5 × 8 = 40 cm²',
+            ],
+            answer: '40 cm²',
+          },
+        ],
+      },
+      {
+        title: '2. Luas Jajar Genjang',
+        content: [
+          'Jika jajar genjang dipotong menurut garis tingginya lalu dipindahkan, bentuknya akan sama dengan persegi panjang.',
+          'Oleh karena itu, rumus luas jajar genjang: Luas = alas × tinggi (L = a × t).',
+        ],
+        visualType: 'area_parallelogram',
+        formula: 'L_jajargenjang = a × t',
+        examples: [
+          {
+            question: 'Hitunglah luas jajar genjang dengan panjang alas 14 cm dan tinggi 7 cm!',
+            steps: [
+              'L = a × t',
+              'L = 14 × 7 = 98 cm²',
+            ],
+            answer: '98 cm²',
+          },
+        ],
+      },
+      {
+        title: '3. Luas Trapesium',
+        content: [
+          'Trapesium memiliki sepasang sisi sejajar (kita sebut a dan b) dan tinggi t.',
+          'Rumus luas trapesium: Luas = 1/2 × (jumlah sisi sejajar) × tinggi.',
+          'L = 1/2 × (a + b) × t',
+        ],
+        visualType: 'area_trapezoid',
+        formula: 'L_trapesium = 1/2 × (a + b) × t',
+        examples: [
+          {
+            question: 'Trapesium memiliki sisi sejajar 8 cm dan 12 cm, serta tinggi 6 cm. Berapa luasnya?',
+            steps: [
+              'Jumlah sisi sejajar: 8 + 12 = 20 cm',
+              'L = 1/2 × 20 × 6 = 10 × 6 = 60 cm²',
+            ],
+            answer: '60 cm²',
+          },
+        ],
+      },
+      {
+        title: '4. Luas Layang-Layang & Belah Ketupat',
+        content: [
+          'Layang-layang dan belah ketupat memiliki dua diagonal (d1 dan d2) yang saling berpotongan tegak lurus.',
+          'Rumus: Luas = 1/2 × diagonal 1 × diagonal 2.',
+        ],
+        visualType: 'area_kite_rhombus',
+        formula: 'L_layang-layang = 1/2 × d1 × d2',
+        examples: [
+          {
+            question: 'Sebuah layang-layang memiliki panjang diagonal 16 cm dan 20 cm. Berapa luas daerahnya?',
+            steps: [
+              'L = 1/2 × d1 × d2',
+              'L = 1/2 × 16 × 20 = 8 × 20 = 160 cm²',
+            ],
+            answer: '160 cm²',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-5-1',
+        question: 'Sebuah segitiga memiliki alas 12 cm dan tinggi 5 cm. Luas segitiga tersebut adalah...',
+        options: ['17 cm²', '30 cm²', '60 cm²', '120 cm²'],
+        correctIndex: 1,
+        explanation: 'Luas segitiga = 1/2 × alas × tinggi = 1/2 × 12 × 5 = 6 × 5 = 30 cm².',
+      },
+      {
+        id: 'qq-5-2',
+        question: 'Rumus untuk mencari luas jajar genjang adalah...',
+        options: ['a + t', 'a × t', '1/2 × a × t', '2 × (a + t)'],
+        correctIndex: 1,
+        explanation: 'Luas jajar genjang adalah alas × tinggi (a × t).',
+      },
+      {
+        id: 'qq-5-3',
+        question: 'Layang-layang memiliki diagonal 10 cm dan 14 cm. Berapakah luas layang-layang tersebut?',
+        options: ['70 cm²', '140 cm²', '24 cm²', '35 cm²'],
+        correctIndex: 0,
+        explanation: 'Luas layang-layang = 1/2 × d1 × d2 = 1/2 × 10 × 14 = 5 × 14 = 70 cm².',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-5-1',
+        question: 'Luas jajar genjang dengan panjang alas 18 cm dan tinggi 10 cm adalah...',
+        options: ['28 cm²', '90 cm²', '180 cm²', '360 cm²'],
+        correctIndex: 2,
+        explanation: 'Luas = alas × tinggi = 18 × 10 = 180 cm².',
+      },
+      {
+        id: 'mc-5-2',
+        question: 'Sebuah trapesium memiliki panjang sisi-sisi sejajar 14 cm dan 20 cm, serta tinggi 8 cm. Luas trapesium tersebut adalah...',
+        options: ['136 cm²', '144 cm²', '272 cm²', '320 cm²'],
+        correctIndex: 0,
+        explanation: 'Luas = 1/2 × (14 + 20) × 8 = 1/2 × 34 × 8 = 17 × 8 = 136 cm².',
+      },
+      {
+        id: 'mc-5-3',
+        question: 'Sebuah segitiga siku-siku memiliki panjang sisi siku-sikunya 9 cm dan 12 cm. Luas daerah segitiga tersebut adalah...',
+        options: ['54 cm²', '108 cm²', '21 cm²', '45 cm²'],
+        correctIndex: 0,
+        explanation: 'Pada segitiga siku-siku, kedua sisi siku-sikunya merupakan alas dan tinggi: L = 1/2 × 9 × 12 = 9 × 6 = 54 cm².',
+      },
+      {
+        id: 'mc-5-4',
+        question: 'Belah ketupat mempunyai diagonal masing-masing 15 cm dan 18 cm. Luas belah ketupat tersebut adalah...',
+        options: ['135 cm²', '270 cm²', '150 cm²', '180 cm²'],
+        correctIndex: 0,
+        explanation: 'Luas = 1/2 × 15 × 18 = 15 × 9 = 135 cm².',
+      },
+      {
+        id: 'mc-5-5',
+        question: 'Sebuah taman berbentuk segitiga memiliki luas 60 m². Jika panjang alas taman tersebut 12 m, maka tinggi taman tersebut adalah...',
+        options: ['5 m', '8 m', '10 m', '12 m'],
+        correctIndex: 2,
+        explanation: 'L = 1/2 × a × t -> 60 = 1/2 × 12 × t -> 60 = 6 × t -> t = 60 ÷ 6 = 10 m.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-5-1',
+        question: 'Berapakah luas segitiga dengan alas 16 cm dan tinggi 10 cm?',
+        acceptableAnswers: ['80'],
+        displayAnswer: '80',
+        hint: 'L = 1/2 × 16 × 10.',
+        explanation: 'Luas = 1/2 × 16 × 10 = 80 cm².',
+      },
+      {
+        id: 'fill-5-2',
+        question: 'Sebuah jajar genjang memiliki luas 96 cm² dan alas 12 cm. Berapakah tingginya?',
+        acceptableAnswers: ['8'],
+        displayAnswer: '8',
+        hint: 'Tinggi = Luas dibagi alas: 96 ÷ 12.',
+        explanation: 't = 96 ÷ 12 = 8 cm.',
+      },
+      {
+        id: 'fill-5-3',
+        question: 'Trapesium dengan sisi sejajar 6 cm dan 10 cm serta tinggi 5 cm memiliki luas berapa cm²?',
+        acceptableAnswers: ['40'],
+        displayAnswer: '40',
+        hint: 'L = 1/2 × (6 + 10) × 5 = 1/2 × 16 × 5.',
+        explanation: 'Luas = 1/2 × 16 × 5 = 8 × 5 = 40 cm².',
+      },
+      {
+        id: 'fill-5-4',
+        question: 'Layang-layang memiliki diagonal 12 cm dan 15 cm. Berapa luas daerah layang-layang tersebut?',
+        acceptableAnswers: ['90'],
+        displayAnswer: '90',
+        hint: 'L = 1/2 × 12 × 15 = 6 × 15.',
+        explanation: 'Luas = 1/2 × 12 × 15 = 90 cm².',
+      },
+      {
+        id: 'fill-5-5',
+        question: 'Jika luas belah ketupat adalah 50 cm² dan salah satu diagonalnya 10 cm, berapa panjang diagonal yang lainnya?',
+        acceptableAnswers: ['10'],
+        displayAnswer: '10',
+        hint: 'd2 = (2 × Luas) / d1 = (2 × 50) / 10.',
+        explanation: 'd2 = 100 ÷ 10 = 10 cm.',
+      },
+    ],
+  },
+
+  // ================= SEMESTER 2 =================
+  // BAB 6
+  {
+    id: 'bab-6',
+    chapterNumber: 6,
+    semester: 2,
+    title: 'Sudut',
+    tagline: 'Mengenal Jenis-Jenis Sudut, Mengukur Busur Derajat, dan Menaksir Sudut',
+    iconName: 'Compass',
+    themeColor: 'indigo',
+    themePastel: 'biru',
+    description: 'Pelajari konsep sudut yang dibentuk dua garis berpotongan, macam-macam sudut (lancip, siku-siku, tumpul, lurus), cara menggunakan busur derajat, serta menaksir besar sudut.',
+    subtopics: [
+      'Mengenal jenis-jenis sudut (lancip, siku-siku, tumpul, lurus)',
+      'Mengukur besar sudut menggunakan busur derajat (0° - 180°)',
+      'Menaksir besar sudut dalam kehidupan sehari-hari',
+      'Sudut pada jarum jam',
+    ],
+    sections: [
+      {
+        title: '1. Mengenal Jenis-Jenis Sudut',
+        content: [
+          'Sudut terbentuk dari dua sinar garis yang titik pangkalnya bersekutu (titik sudut).',
+          'Jenis sudut berdasarkan besarnya:',
+          '• Sudut Lancip: besarnya antara 0° dan kurang dari 90° (< 90°).',
+          '• Sudut Siku-siku: besarnya tepat 90° (tegak lurus, membentuk huruf L).',
+          '• Sudut Tumpul: besarnya lebih dari 90° dan kurang dari 180° (90° < sudut < 180°).',
+          '• Sudut Lurus: besarnya tepat 180° (membentuk garis lurus).',
+          '• Sudut Satu Putaran Penuh: besarnya 360°.',
+        ],
+        tips: 'Ingat patokan utama: Sudut siku-siku = 90°. Sudut lancip lebih kecil dari siku-siku, sudut tumpul lebih lebar.',
+        examples: [
+          {
+            question: 'Sudut yang besarnya 65° termasuk jenis sudut apa?',
+            steps: [
+              '65° berada di antara 0° dan 90° (kurang dari 90°).',
+            ],
+            answer: 'Sudut Lancip.',
+          },
+        ],
+      },
+      {
+        title: '2. Mengukur Sudut dengan Busur Derajat',
+        content: [
+          'Busur derajat adalah alat pengukur besar sudut dengan satuan baku derajat (°). Busur derajat standar berbentuk setengah lingkaran berukuran 0° sampai 180°.',
+          'Langkah-langkah mengukur sudut:',
+          '1. Letakkan titik pusat busur derajat tepat pada titik sudut bangun.',
+          '2. Impitkan garis alas busur (garis 0°) dengan salah satu kaki sudut.',
+          '3. Lihat angka pada busur yang berimpit dengan kaki sudut yang lain. Gunakan skala yang dimulai dari angka 0 pada kaki pertama.',
+        ],
+        visualType: 'angle_protractor',
+        examples: [
+          {
+            question: 'Jika salah satu kaki sudut berimpit di skala dalam 0°, dan kaki kedua menunjuk ke angka 120°, berapa besar sudutnya?',
+            steps: [
+              'Karena kaki pertama mulai dari 0° skala dalam, maka baca angka skala dalam pada kaki kedua: 120°.',
+            ],
+            answer: '120° (Sudut tumpul).',
+          },
+        ],
+      },
+      {
+        title: '3. Sudut pada Jarum Jam',
+        content: [
+          'Satu putaran penuh jam = 360° dan terbagi menjadi 12 angka.',
+          'Besar sudut antara dua angka yang berdekatan pada jam = 360° ÷ 12 = 30°.',
+          'Contoh: Pada pukul 03.00, jarum pendek di angka 3 dan jarum panjang di angka 12.',
+          'Jarak angka = 3 langkah. Besar sudut = 3 × 30° = 90° (sudut siku-siku).',
+        ],
+        examples: [
+          {
+            question: 'Berapakah besar sudut terkecil yang dibentuk jarum jam pada pukul 04.00?',
+            steps: [
+              'Pada pukul 04.00, jarum pendek di 4 dan jarum panjang di 12.',
+              'Jarak antara angka 12 dan 4 adalah 4 langkah.',
+              'Besar sudut = 4 × 30° = 120°.',
+            ],
+            answer: '120° (Sudut tumpul).',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-6-1',
+        question: 'Sudut yang besarnya tepat 90° dinamakan sudut...',
+        options: ['Lancip', 'Siku-siku', 'Tumpul', 'Lurus'],
+        correctIndex: 1,
+        explanation: 'Sudut tepat 90 derajat dinamakan sudut siku-siku.',
+      },
+      {
+        id: 'qq-6-2',
+        question: 'Sudut yang besarnya 135° termasuk jenis sudut...',
+        options: ['Lancip', 'Siku-siku', 'Tumpul', 'Refleks'],
+        correctIndex: 2,
+        explanation: 'Sudut antara 90° dan 180° adalah sudut tumpul.',
+      },
+      {
+        id: 'qq-6-3',
+        question: 'Besar sudut terkecil yang dibentuk oleh kedua jarum jam pada pukul 02.00 adalah...',
+        options: ['30°', '45°', '60°', '90°'],
+        correctIndex: 2,
+        explanation: 'Tiap lompatan angka pada jam besarnya 30°. Pada pukul 02.00 ada 2 lompatan angka (dari 12 ke 2), jadi 2 × 30° = 60°.',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-6-1',
+        question: 'Alat ukur baku yang digunakan untuk mengukur besar sudut adalah...',
+        options: ['Meteran pita', 'Jangka sorong', 'Busur derajat', 'Timbangan'],
+        correctIndex: 2,
+        explanation: 'Busur derajat adalah alat ukur standar untuk menentukan besar sudut.',
+      },
+      {
+        id: 'mc-6-2',
+        question: 'Sudut lurus memiliki besar sudut sebesar...',
+        options: ['90°', '180°', '270°', '360°'],
+        correctIndex: 1,
+        explanation: 'Sudut lurus memiliki ukuran tepat 180° dan membentuk garis lurus.',
+      },
+      {
+        id: 'mc-6-3',
+        question: 'Besar sudut terkecil yang dibentuk jarum jam pada pukul 05.00 adalah...',
+        options: ['120°', '150°', '180°', '210°'],
+        correctIndex: 1,
+        explanation: 'Jarak dari angka 12 ke 5 adalah 5 angka. 5 × 30° = 150°.',
+      },
+      {
+        id: 'mc-6-4',
+        question: 'Manakah dari sudut-sudut berikut yang merupakan sudut lancip?',
+        options: ['45°', '90°', '110°', '180°'],
+        correctIndex: 0,
+        explanation: 'Sudut lancip besarnya kurang dari 90°. Sudut 45° < 90°.',
+      },
+      {
+        id: 'mc-6-5',
+        question: 'Sebuah segitiga memiliki dua sudut berukuran 60° dan 70°. Berapakah besar sudut ketiga pada segitiga tersebut?',
+        options: ['40°', '50°', '60°', '70°'],
+        correctIndex: 1,
+        explanation: 'Jumlah ketiga sudut dalam segitiga selalu 180°. Sudut ketiga = 180° - (60° + 70°) = 180° - 130° = 50°.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-6-1',
+        question: 'Berapakah besar sudut siku-siku dalam derajat?',
+        acceptableAnswers: ['90'],
+        displayAnswer: '90°',
+        hint: 'Sudut siku-siku tegak lurus.',
+        explanation: 'Sudut siku-siku besarnya tepat 90 derajat.',
+      },
+      {
+        id: 'fill-6-2',
+        question: 'Berapakah besar sudut lurus dalam derajat?',
+        acceptableAnswers: ['180'],
+        displayAnswer: '180°',
+        hint: 'Sudut lurus sama dengan dua kali sudut siku-siku.',
+        explanation: 'Sudut lurus besarnya 180 derajat.',
+      },
+      {
+        id: 'fill-6-3',
+        question: 'Berapakah besar sudut terkecil pada jarum jam saat menunjukkan tepat pukul 01.00?',
+        acceptableAnswers: ['30'],
+        displayAnswer: '30°',
+        hint: 'Satu putaran jam (12 jam) = 360°, tiap 1 jam bernilai 360 : 12.',
+        explanation: 'Pukul 01.00 berjarak 1 jam = 30 derajat.',
+      },
+      {
+        id: 'fill-6-4',
+        question: 'Jumlah ketiga sudut di dalam segitiga selalu berjumlah berapa derajat?',
+        acceptableAnswers: ['180'],
+        displayAnswer: '180°',
+        hint: 'Selalu membentuk sudut lurus jika ketiga sudutnya digabungkan.',
+        explanation: 'Jumlah seluruh sudut dalam segitiga selalu 180 derajat.',
+      },
+      {
+        id: 'fill-6-5',
+        question: 'Pada pukul 06.00, jarum jam membentuk sudut sebesar berapa derajat?',
+        acceptableAnswers: ['180'],
+        displayAnswer: '180°',
+        hint: 'Jarum menunjuk angka 12 dan 6 membentuk garis lurus.',
+        explanation: '6 × 30° = 180 derajat (sudut lurus).',
+      },
+    ],
+  },
+
+  // BAB 7
+  {
+    id: 'bab-7',
+    chapterNumber: 7,
+    semester: 2,
+    title: 'Membandingkan Ciri-Ciri Bangun Datar',
+    tagline: 'Sifat Bangun Datar, Segi Banyak Beraturan & Tak Beraturan, Simetri',
+    iconName: 'Shapes',
+    themeColor: 'rose',
+    themePastel: 'merah',
+    description: 'Pelajari sifat bangun datar, segi banyak beraturan dan tidak beraturan, membandingkan persamaan dan perbedaan, serta simetri lipat dan simetri putar.',
+    subtopics: [
+      'Sifat bangun datar segi empat dan segitiga',
+      'Segi banyak beraturan dan segi banyak tidak beraturan',
+      'Membandingkan perbedaan dan persamaan antar bangun datar',
+      'Simetri lipat dan sumbu simetri',
+      'Simetri putar',
+    ],
+    sections: [
+      {
+        title: '1. Segi Banyak Beraturan & Tidak Beraturan',
+        content: [
+          '• Segi Banyak Beraturan: Bangun datar tertutup yang semua sisinya sama panjang dan semua sudutnya sama besar. Contoh: segitiga sama sisi, persegi, segi lima beraturan (pentagon), segi enam beraturan (heksagon).',
+          '• Segi Banyak Tidak Beraturan: Bangun datar yang sisinya tidak sama panjang atau sudutnya tidak sama besar. Contoh: segitiga sembarang, persegi panjang, trapesium, jajar genjang.',
+        ],
+        visualType: 'regular_irregular',
+        tips: 'Ingat! Persegi adalah segi banyak beraturan, sedangkan persegi panjang tidak beraturan karena sisinya tidak sama panjang.',
+        examples: [
+          {
+            question: 'Mengapa persegi panjang digolongkan sebagai segi banyak tidak beraturan?',
+            steps: [
+              'Meskipun keempat sudutnya sama besar (90°), sisi-sisi persegi panjang tidak sama panjang (panjang ≠ lebar).',
+            ],
+            answer: 'Karena syarat segi banyak beraturan harus memenuhi keduanya: semua sisi sama panjang dan semua sudut sama besar.',
+          },
+        ],
+      },
+      {
+        title: '2. Membandingkan Ciri Bangun Datar',
+        content: [
+          '• Persegi vs Persegi Panjang: Keduanya punya 4 sudut siku-siku, tapi persegi memiliki 4 sisi sama panjang, sedangkan persegi panjang hanya sisi berhadapan yang sama.',
+          '• Belah Ketupat vs Persegi: Keduanya memiliki 4 sisi sama panjang, tapi persegi memiliki sudut 90°, sedangkan belah ketupat sudutnya tidak harus 90° (ada lancip dan tumpul).',
+          '• Jajar Genjang: Sisi berhadapan sejajar dan sama panjang, sudut berhadapan sama besar, tidak memiliki simetri lipat.',
+        ],
+        visualType: 'shape_comparison',
+        examples: [
+          {
+            question: 'Apa persamaan antara persegi dan belah ketupat?',
+            steps: [
+              'Kedua bangun datar tersebut memiliki 4 sisi yang semuanya sama panjang.',
+            ],
+            answer: 'Memiliki 4 sisi sama panjang dan sisi yang berhadapan sejajar.',
+          },
+        ],
+      },
+      {
+        title: '3. Simetri Lipat dan Simetri Putar',
+        content: [
+          '• Simetri Lipat: Banyaknya lipatan yang dapat membagi suatu bangun datar menjadi dua bagian yang sama besar dan saling berimpit pas. Garis lipatannya disebut sumbu simetri.',
+          '  - Persegi: 4 simetri lipat',
+          '  - Persegi panjang: 2 simetri lipat',
+          '  - Segitiga sama sisi: 3 simetri lipat',
+          '  - Lingkaran: tak terhingga simetri lipat',
+          '• Simetri Putar: Banyaknya posisi putaran (kurang dari 360°) di mana bangun tersebut menempati bingkainya kembali seperti semula.',
+          '  - Persegi: 4 tingkat',
+          '  - Persegi panjang: 2 tingkat',
+          '  - Segitiga sama sisi: 3 tingkat',
+        ],
+        visualType: 'symmetry_visual',
+        examples: [
+          {
+            question: 'Berapa banyak simetri lipat dan simetri putar pada persegi panjang?',
+            steps: [
+              'Persegi panjang dapat dilipat mendatar dan tegak -> 2 simetri lipat.',
+              'Diputar 180° dan 360° menempati bingkai -> 2 simetri putar.',
+            ],
+            answer: '2 simetri lipat dan 2 simetri putar.',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-7-1',
+        question: 'Bangun datar yang memiliki 4 sisi sama panjang dan 4 sudut siku-siku adalah...',
+        options: ['Jajar genjang', 'Trapesium', 'Persegi', 'Layang-layang'],
+        correctIndex: 2,
+        explanation: 'Persegi memiliki 4 sisi sama panjang dan 4 sudut siku-siku (90°).',
+      },
+      {
+        id: 'qq-7-2',
+        question: 'Berapakah jumlah simetri lipat pada bangun persegi?',
+        options: ['2', '3', '4', '8'],
+        correctIndex: 2,
+        explanation: 'Persegi memiliki 4 sumbu simetri lipat (vertikal, horizontal, dan 2 diagonal).',
+      },
+      {
+        id: 'qq-7-3',
+        question: 'Manakah bangun datar berikut yang tergolong segi banyak beraturan?',
+        options: ['Segitiga sama sisi', 'Segitiga siku-siku', 'Persegi panjang', 'Jajar genjang'],
+        correctIndex: 0,
+        explanation: 'Segitiga sama sisi memiliki 3 sisi sama panjang dan 3 sudut sama besar (60°), sehingga beraturan.',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-7-1',
+        question: 'Bangun datar yang memiliki sepasang sisi berhadapan sejajar dan sudut-sudut yang berdekatan berjumlah 180° adalah...',
+        options: ['Lingkaran', 'Trapesium', 'Segitiga', 'Layang-layang'],
+        correctIndex: 1,
+        explanation: 'Ciri utama trapesium adalah memiliki tepat sepasang sisi yang sejajar.',
+      },
+      {
+        id: 'mc-7-2',
+        question: 'Banyak simetri putar pada bangun persegi panjang adalah...',
+        options: ['1', '2', '3', '4'],
+        correctIndex: 1,
+        explanation: 'Persegi panjang memiliki 2 simetri putar (pada putaran 180° dan 360°).',
+      },
+      {
+        id: 'mc-7-3',
+        question: 'Bangun datar berikut yang TIDAK memiliki simetri lipat adalah...',
+        options: ['Persegi panjang', 'Segitiga sama kaki', 'Jajar genjang', 'Belah ketupat'],
+        correctIndex: 2,
+        explanation: 'Jajar genjang sembarang tidak memiliki sumbu simetri lipat (simetri lipat = 0).',
+      },
+      {
+        id: 'mc-7-4',
+        question: 'Perbedaan utama antara belah ketupat dan persegi adalah...',
+        options: [
+          'Panjang sisinya',
+          'Besar sudut-sudutnya',
+          'Jumlah sudutnya',
+          'Banyak sisinya',
+        ],
+        correctIndex: 1,
+        explanation: 'Keduanya memiliki 4 sisi sama panjang, tetapi persegi semua sudutnya 90°, sedangkan belah ketupat sudutnya tidak 90°.',
+      },
+      {
+        id: 'mc-7-5',
+        question: 'Berapa banyak simetri lipat yang dimiliki oleh bangun lingkaran?',
+        options: ['4', '8', '12', 'Tak terhingga'],
+        correctIndex: 3,
+        explanation: 'Lingkaran memiliki simetri lipat yang tak terhingga banyaknya karena dapat dilipat di sepanjang garis tengah manapun.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-7-1',
+        question: 'Berapa banyak simetri lipat yang dimiliki oleh bangun segitiga sama sisi?',
+        acceptableAnswers: ['3'],
+        displayAnswer: '3',
+        hint: 'Segitiga sama sisi memiliki 3 sumbu simetri dari setiap sudut ke sisi di depannya.',
+        explanation: 'Segitiga sama sisi memiliki 3 simetri lipat.',
+      },
+      {
+        id: 'fill-7-2',
+        question: 'Berapakah jumlah simetri putar pada bangun persegi?',
+        acceptableAnswers: ['4'],
+        displayAnswer: '4',
+        hint: 'Persegi dapat diputar 90°, 180°, 270°, dan 360°.',
+        explanation: 'Persegi memiliki 4 simetri putar.',
+      },
+      {
+        id: 'fill-7-3',
+        question: 'Berapa banyak sudut siku-siku pada bangun persegi panjang?',
+        acceptableAnswers: ['4'],
+        displayAnswer: '4',
+        hint: 'Setiap sudut pada persegi panjang besarnya 90°.',
+        explanation: 'Persegi panjang memiliki 4 sudut siku-siku.',
+      },
+      {
+        id: 'fill-7-4',
+        question: 'Berapa banyak sisi yang dimiliki oleh segi lima beraturan (pentagon)?',
+        acceptableAnswers: ['5'],
+        displayAnswer: '5',
+        hint: 'Perhatikan kata "segi lima".',
+        explanation: 'Segi lima beraturan memiliki 5 sisi yang sama panjang.',
+      },
+      {
+        id: 'fill-7-5',
+        question: 'Berapakah simetri lipat pada bangun jajar genjang umum?',
+        acceptableAnswers: ['0'],
+        displayAnswer: '0',
+        hint: 'Jajar genjang tidak bisa dilipat saling menutupi pas.',
+        explanation: 'Jajar genjang umum memiliki 0 simetri lipat.',
+      },
+    ],
+  },
+
+  // BAB 8
+  {
+    id: 'bab-8',
+    chapterNumber: 8,
+    semester: 2,
+    title: 'Data',
+    tagline: 'Pengumpulan Data, Piktogram, Diagram Batang, Diagram Garis',
+    iconName: 'BarChart2',
+    themeColor: 'cyan',
+    themePastel: 'kuning',
+    description: 'Pelajari teknik pengumpulan data, menyajikan data dalam bentuk tabel, piktogram (diagram gambar), diagram batang, diagram garis, serta membaca dan menafsirkannya.',
+    subtopics: [
+      'Pengumpulan data (wawancara, angket, pencatatan langsung)',
+      'Tabel frekuensi',
+      'Piktogram (diagram gambar)',
+      'Diagram batang (vertikal dan horizontal)',
+      'Diagram garis dan interpretasi data',
+    ],
+    sections: [
+      {
+        title: '1. Pengumpulan & Tabel Data',
+        content: [
+          'Data adalah catatan atas kumpulan fakta atau informasi (misalnya nilai ulangan, tinggi badan, hobi teman sekelas).',
+          'Cara mengumpulkan data:',
+          '• Pencatatan langsung (mengukur tinggi badan dengan meteran).',
+          '• Wawancara / tanya jawab langsung.',
+          '• Angket / kuesioner lembar isian.',
+          'Data mentah kemudian dikelompokkan menggunakan turus (tally) ke dalam tabel frekuensi agar mudah dibaca.',
+        ],
+        examples: [
+          {
+            question: 'Data buah favorit 10 siswa: Apel, Jeruk, Apel, Mangga, Apel, Jeruk, Mangga, Apel, Jeruk, Apel. Buah apa yang paling banyak disukai?',
+            steps: [
+              'Hitung frekuensi masing-masing buah:',
+              'Apel: 5 siswa',
+              'Jeruk: 3 siswa',
+              'Mangga: 2 siswa',
+            ],
+            answer: 'Apel (disukai oleh 5 siswa).',
+          },
+        ],
+      },
+      {
+        title: '2. Piktogram (Diagram Gambar)',
+        content: [
+          'Piktogram adalah diagram yang menyajikan data menggunakan gambar atau simbol.',
+          'Setiap 1 gambar mewakili jumlah tertentu (ada keterangan skala).',
+          'Contoh: 1 gambar 📚 mewakili 10 buku. Jika ada 4 gambar buku, berarti totalnya: 4 × 10 = 40 buku.',
+        ],
+        tips: 'Selalu periksa keterangan/kunci gambar di bagian bawah piktogram!',
+        examples: [
+          {
+            question: 'Jika 1 simbol ⭐ mewakili 5 siswa, berapa banyak siswa yang diwakili oleh 6 simbol ⭐?',
+            steps: [
+              'Total siswa = 6 × 5 = 30 siswa.',
+            ],
+            answer: '30 siswa.',
+          },
+        ],
+      },
+      {
+        title: '3. Diagram Batang & Diagram Garis',
+        content: [
+          '• Diagram Batang: Menggunakan batang persegi panjang tegak atau mendatar untuk menunjukkan frekuensi data. Tinggi batang sebanding dengan nilai datanya.',
+          '• Diagram Garis: Menggunakan titik-titik koordinat yang dihubungkan dengan garis lurus. Sangat cocok untuk melihat perkembangan atau perubahan data dari waktu ke waktu (misal berat badan tiap bulan, suhu udara tiap jam).',
+        ],
+        visualType: 'data_chart',
+        examples: [
+          {
+            question: 'Tinggi batang data ekstrakurikuler: Pramuka (24 siswa), Futsal (30 siswa), Robotik (16 siswa). Berapa total seluruh siswa?',
+            steps: [
+              'Jumlahkan nilai seluruh batang:',
+              'Total = 24 + 30 + 16 = 70 siswa.',
+            ],
+            answer: '70 siswa.',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-8-1',
+        question: 'Pada suatu piktogram, 1 gambar mobil 🚗 mewakili 15 unit mobil. Jika terdapat 4 gambar mobil, maka jumlah mobil sebenarnya adalah...',
+        options: ['30 unit', '45 unit', '60 unit', '75 unit'],
+        correctIndex: 2,
+        explanation: '4 × 15 = 60 unit mobil.',
+      },
+      {
+        id: 'qq-8-2',
+        question: 'Diagram yang paling cocok untuk menampilkan data kenaikan tinggi badan anak dari usia 1 hingga 5 tahun adalah...',
+        options: ['Diagram lingkaran', 'Diagram garis', 'Piktogram', 'Diagram pohon'],
+        correctIndex: 1,
+        explanation: 'Diagram garis paling tepat digunakan untuk menyajikan data berkala atau perubahan dari waktu ke waktu.',
+      },
+      {
+        id: 'qq-8-3',
+        question: 'Data nilai ulangan matematika: 70, 80, 90, 80, 70, 80, 100. Nilai yang paling sering muncul (modus) adalah...',
+        options: ['70', '80', '90', '100'],
+        correctIndex: 1,
+        explanation: 'Nilai 80 muncul sebanyak 3 kali, paling banyak dibandingkan nilai lainnya.',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-8-1',
+        question: 'Tabel frekuensi penjualan buku: Senin (25), Selasa (30), Rabu (20), Kamis (35), Jumat (40). Penjualan terbanyak terjadi pada hari...',
+        options: ['Senin', 'Selasa', 'Kamis', 'Jumat'],
+        correctIndex: 3,
+        explanation: 'Hari Jumat memiliki angka frekuensi tertinggi yaitu 40 buku.',
+      },
+      {
+        id: 'mc-8-2',
+        question: 'Berdasarkan data: Senin (25), Selasa (30), Rabu (20), Kamis (35), Jumat (40), berapakah selisih penjualan buku hari Jumat dan hari Rabu?',
+        options: ['15 buku', '20 buku', '25 buku', '10 buku'],
+        correctIndex: 1,
+        explanation: 'Jumat (40) - Rabu (20) = 20 buku.',
+      },
+      {
+        id: 'mc-8-3',
+        question: 'Dalam sebuah diagram batang, tinggi batang kelas A adalah 28 siswa dan kelas B adalah 32 siswa. Berapa total siswa kedua kelas?',
+        options: ['50 siswa', '58 siswa', '60 siswa', '62 siswa'],
+        correctIndex: 2,
+        explanation: '28 + 32 = 60 siswa.',
+      },
+      {
+        id: 'mc-8-4',
+        question: 'Jika 1 simbol apel mewakili 8 buah apel, maka untuk menggambarkan 56 buah apel dibutuhkan simbol apel sebanyak...',
+        options: ['6 simbol', '7 simbol', '8 simbol', '9 simbol'],
+        correctIndex: 1,
+        explanation: '56 ÷ 8 = 7 simbol.',
+      },
+      {
+        id: 'mc-8-5',
+        question: 'Rata-rata dari nilai ulangan: 80, 70, 90, 80 adalah...',
+        options: ['75', '80', '85', '90'],
+        correctIndex: 1,
+        explanation: 'Jumlah nilai = 80 + 70 + 90 + 80 = 320. Rata-rata = 320 ÷ 4 = 80.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-8-1',
+        question: 'Jika 1 ikon buku 📖 mewakili 20 buah buku di perpustakaan, berapa jumlah buku yang diwakili oleh 5 ikon buku?',
+        acceptableAnswers: ['100'],
+        displayAnswer: '100',
+        hint: 'Kalikan banyak ikon dengan nilai per ikon: 5 × 20.',
+        explanation: '5 × 20 = 100 buku.',
+      },
+      {
+        id: 'fill-8-2',
+        question: 'Data berat badan 5 siswa (kg): 34, 36, 32, 38, 40. Berapakah selisih berat badan tertinggi dan terendah?',
+        acceptableAnswers: ['8'],
+        displayAnswer: '8 kg',
+        hint: 'Berat tertinggi 40 kg, terendah 32 kg. Hitung 40 - 32.',
+        explanation: '40 - 32 = 8 kg.',
+      },
+      {
+        id: 'fill-8-3',
+        question: 'Sebuah toko menjual 15 kg beras di hari Senin, 25 kg di hari Selasa, dan 20 kg di hari Rabu. Berapa total beras yang terjual dalam 3 hari tersebut?',
+        acceptableAnswers: ['60'],
+        displayAnswer: '60 kg',
+        hint: 'Jumlahkan 15 + 25 + 20.',
+        explanation: '15 + 25 + 20 = 60 kg.',
+      },
+      {
+        id: 'fill-8-4',
+        question: 'Untuk mewakili data 72 orang pada piktogram dengan skala 1 gambar = 9 orang, diperlukan berapa gambar?',
+        acceptableAnswers: ['8'],
+        displayAnswer: '8',
+        hint: 'Bagi 72 dengan 9.',
+        explanation: '72 ÷ 9 = 8 gambar.',
+      },
+      {
+        id: 'fill-8-5',
+        question: 'Hitunglah rata-rata dari bilangan: 60, 70, dan 80!',
+        acceptableAnswers: ['70'],
+        displayAnswer: '70',
+        hint: 'Jumlahkan (60 + 70 + 80) lalu bagi 3.',
+        explanation: '(60 + 70 + 80) ÷ 3 = 210 ÷ 3 = 70.',
+      },
+    ],
+  },
+
+  // BAB 9
+  {
+    id: 'bab-9',
+    chapterNumber: 9,
+    semester: 2,
+    title: 'Bilangan Cacah Sampai 1.000.000',
+    tagline: 'Membaca, Menulis, dan Menghitung Bilangan Skala Besar Hingga 1 Juta',
+    iconName: 'Coins',
+    themeColor: 'violet',
+    themePastel: 'coklat',
+    description: 'Pelajari cara membaca dan menulis bilangan cacah hingga 1.000.000 (satu juta), nilai tempat ratusan ribu dan jutaan, operasi hitung skala besar, dan aplikasinya pada uang, jarak, dan populasi.',
+    subtopics: [
+      'Membaca dan menulis bilangan cacah hingga 1.000.000',
+      'Nilai tempat ratusan ribu hingga jutaan',
+      'Operasi hitung bilangan cacah skala besar',
+      'Penerapan dalam kehidupan sehari-hari (uang, jarak, kuantitas)',
+    ],
+    sections: [
+      {
+        title: '1. Membaca & Menulis Bilangan Hingga 1.000.000',
+        content: [
+          'Bilangan 1.000.000 dibaca "satu juta" dan memiliki 7 digit angka.',
+          'Pemisah ribuan menggunakan tanda titik setiap 3 angka dari kanan.',
+          'Contoh: 750.400 dibaca "tujuh ratus lima puluh ribu empat ratus".',
+          'Contoh: 1.000.000 terdiri dari 1 angka satu diikuti oleh 6 angka nol.',
+        ],
+        visualType: 'million_place_value',
+        tips: 'Ingat urutan nilai tempat: Satuan -> Puluhan -> Ratusan -> Ribuan -> Puluhan Ribu -> Ratusan Ribu -> Jutaan.',
+        examples: [
+          {
+            question: 'Bagaimana cara membaca bilangan 825.060?',
+            steps: [
+              '825 di kelompok ribuan dibaca "delapan ratus dua puluh lima ribu".',
+              '060 dibaca "enam puluh".',
+            ],
+            answer: 'Delapan ratus dua puluh lima ribu enam puluh.',
+          },
+        ],
+      },
+      {
+        title: '2. Nilai Tempat Skala Besar',
+        content: [
+          'Mari kita periksa nilai tempat pada bilangan 485.620:',
+          '• Angka 4 menempati Ratusan Ribu -> bernilai 400.000',
+          '• Angka 8 menempati Puluhan Ribu -> bernilai 80.000',
+          '• Angka 5 menempati Ribuan -> bernilai 5.000',
+          '• Angka 6 menempati Ratusan -> bernilai 600',
+          '• Angka 2 menempati Puluhan -> bernilai 20',
+          '• Angka 0 menempati Satuan -> bernilai 0',
+        ],
+        examples: [
+          {
+            question: 'Berapakah nilai angka 6 pada bilangan 675.200?',
+            steps: [
+              'Angka 6 berada di posisi ratusan ribu (paling kiri pada 6 digit).',
+            ],
+            answer: '600.000 (enam ratus ribu).',
+          },
+        ],
+      },
+      {
+        title: '3. Penerapan Skala Besar (Uang & Jarak)',
+        content: [
+          'Bilangan ratusan ribu dan jutaan sangat sering kita temui saat bertransaksi uang atau menghitung jarak dan kuantitas produksi.',
+          'Contoh dalam keuangan:',
+          '• 1 lembar uang seratus ribu rupiah = Rp 100.000',
+          '• 10 lembar uang seratus ribu rupiah = Rp 1.000.000 (satu juta rupiah)',
+        ],
+        examples: [
+          {
+            question: 'Ayah membeli laptop seharga Rp 850.000 (bekas) dan tas laptop seharga Rp 120.000. Berapa total biaya yang dikeluarkan Ayah?',
+            steps: [
+              'Penjumlahan bersusun:',
+              '850.000 + 120.000 = 970.000',
+            ],
+            answer: 'Rp 970.000 (sembilan ratus tujuh puluh ribu rupiah).',
+          },
+        ],
+      },
+    ],
+    quickQuiz: [
+      {
+        id: 'qq-9-1',
+        question: 'Bilangan "enam ratus dua puluh ribu lima ratus" dituliskan dengan angka...',
+        options: ['602.500', '620.500', '625.000', '6.200.500'],
+        correctIndex: 1,
+        explanation: 'Enam ratus dua puluh ribu = 620.000. Lima ratus = 500. Jadi 620.500.',
+      },
+      {
+        id: 'qq-9-2',
+        question: 'Pada bilangan 748.210, angka 7 menempati nilai tempat...',
+        options: ['Ribuan', 'Puluhan Ribu', 'Ratusan Ribu', 'Jutaan'],
+        correctIndex: 2,
+        explanation: 'Angka 7 pada bilangan 6 digit berada di posisi ratusan ribu (700.000).',
+      },
+      {
+        id: 'qq-9-3',
+        question: 'Sepuluh lembar uang seratus ribu rupiah sama nilainya dengan...',
+        options: ['Rp 100.000', 'Rp 500.000', 'Rp 1.000.000', 'Rp 10.000.000'],
+        correctIndex: 2,
+        explanation: '10 × 100.000 = 1.000.000 (satu juta rupiah).',
+      },
+    ],
+    chapterTestMC: [
+      {
+        id: 'mc-9-1',
+        question: 'Hasil penjumlahan dari 450.000 + 375.000 adalah...',
+        options: ['815.000', '825.000', '835.000', '725.000'],
+        correctIndex: 1,
+        explanation: '450.000 + 375.000 = 825.000.',
+      },
+      {
+        id: 'mc-9-2',
+        question: 'Berapakah selisih antara 1.000.000 dan 680.000?',
+        options: ['320.000', '420.000', '380.000', '280.000'],
+        correctIndex: 0,
+        explanation: '1.000.000 - 680.000 = 320.000.',
+      },
+      {
+        id: 'mc-9-3',
+        question: 'Seorang pedagang memiliki modal Rp 800.000. Setelah berjualan, uangnya menjadi Rp 985.000. Berapa keuntungan pedagang tersebut?',
+        options: ['Rp 175.000', 'Rp 185.000', 'Rp 195.000', 'Rp 285.000'],
+        correctIndex: 1,
+        explanation: 'Keuntungan = Pendapatan - Modal = 985.000 - 800.000 = Rp 185.000.',
+      },
+      {
+        id: 'mc-9-4',
+        question: 'Bentuk dekomposisi dari bilangan 534.200 adalah...',
+        options: [
+          '500.000 + 30.000 + 4.000 + 200',
+          '50.000 + 30.000 + 4.000 + 200',
+          '500.000 + 3.000 + 400 + 200',
+          '5.000.000 + 34.000 + 200',
+        ],
+        correctIndex: 0,
+        explanation: '500.000 (ratusan ribu) + 30.000 (puluhan ribu) + 4.000 (ribuan) + 200 (ratusan).',
+      },
+      {
+        id: 'mc-9-5',
+        question: 'Hasil dari 125.000 × 4 adalah...',
+        options: ['400.000', '450.000', '500.000', '600.000'],
+        correctIndex: 2,
+        explanation: '125 × 4 = 500, maka 125.000 × 4 = 500.000.',
+      },
+    ],
+    chapterTestFill: [
+      {
+        id: 'fill-9-1',
+        question: 'Berapakah angka yang menempati nilai tempat ratusan ribu pada bilangan 745.200?',
+        acceptableAnswers: ['7'],
+        displayAnswer: '7',
+        hint: 'Perhatikan digit pertama paling kiri.',
+        explanation: 'Angka 7 menempati ratusan ribu (700.000).',
+      },
+      {
+        id: 'fill-9-2',
+        question: 'Hitunglah: 500.000 + 250.000 = ...',
+        acceptableAnswers: ['750000', '750.000'],
+        displayAnswer: '750.000',
+        hint: '500 ribu ditambah 250 ribu.',
+        explanation: '500.000 + 250.000 = 750.000.',
+      },
+      {
+        id: 'fill-9-3',
+        question: 'Berapa banyak angka nol (0) pada bilangan satu juta (1.000.000)?',
+        acceptableAnswers: ['6'],
+        displayAnswer: '6',
+        hint: 'Hitung digit nol pada 1.000.000.',
+        explanation: 'Pada bilangan 1.000.000 terdapat 6 buah angka nol.',
+      },
+      {
+        id: 'fill-9-4',
+        question: 'Uang Rp 600.000 dibagikan secara merata kepada 3 anak panti asuhan. Berapa rupiah uang yang diterima setiap anak?',
+        acceptableAnswers: ['200000', '200.000'],
+        displayAnswer: 'Rp 200.000',
+        hint: 'Operasi pembagian: 600.000 dibagi 3.',
+        explanation: '600.000 ÷ 3 = 200.000.',
+      },
+      {
+        id: 'fill-9-5',
+        question: 'Hasil dari 1.000.000 - 450.000 adalah...',
+        acceptableAnswers: ['550000', '550.000'],
+        displayAnswer: '550.000',
+        hint: '1 juta dikurangi 450 ribu.',
+        explanation: '1.000.000 - 450.000 = 550.000.',
+      },
+    ],
+  },
+];
